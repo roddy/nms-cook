@@ -1,0 +1,12 @@
+[
+  { "name": "Impulse Beans", "type": "plant", "value": 800 },
+  { "name": "Fireberry", "type": "plant", "value": 800 },
+  { "name": "Frozen Tubers", "type": "plant"},
+  { "name": "Jade Peas", "type": "plant", "value": 800},
+  { "name": "Grahberry", "type": "plant"},
+  { "name": "Aloe Flesh", "type": "plant"},
+  { "name": "Hexaberry", "type": "plant", "value": 1600},
+  { "name": "Heptaploid Wheat", "type": "plant", "value": 800 },
+  { "name": "Sweetroot", "type": "plant", "value": 800},
+  { "name": "Pulpy Roots", "type": "plant", "value": 800}
+]

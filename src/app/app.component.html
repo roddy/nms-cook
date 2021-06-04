@@ -1,0 +1,17 @@
+<h1 class="title">NMS Cook</h1>
+<h2 class="subtitle">Tools for your No Man's Sky cooking needs.</h2>
+
+<nav>
+  <a *ngFor="let category of categories"
+     class="item"
+     [routerLink]="[ category ]">
+    <div class="item-card">
+      <div class="item-card-img-wrapper">
+        <img [src]="'../assets/' + category + '.panel.png'" alt="" role="presentation"/>
+      </div>
+      <div class="item-card-title">{{ category | titlecase }}</div>
+    </div>
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
