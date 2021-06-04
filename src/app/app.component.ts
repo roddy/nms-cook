@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nms-cook';
+  categories = [ "ingredients", "recipes", "tools" ];
+}
+
+interface Category {
+  name: string;
+  target: string[];
+  image?: string;
 }

@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #303030;
+  color: white;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1.title {
+  color: #202020; // darker
+  text-shadow: 0 1px 1px #424242; // lighter
+  font-family: 'Teko', 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  word-spacing: .2em;
+  text-align: center;
+  margin-top: 16px;
+}
