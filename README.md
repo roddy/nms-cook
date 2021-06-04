@@ -1,27 +1,26 @@
-# NmsCook
+# NMS Cook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+NMS Cook is a simple collection of tools related to cooking in the game No Man's Sky. The tools included in this application include:
 
-## Development server
+* Ingredients List (coming soon!)
+* Recipe List (coming soon!)
+* ... and more in the future
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technical details
 
-## Code scaffolding
+This is an Angular project, generated with the [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run the project in development mode, use the `ng serve` command. The application will be available in your browser at `http://localhost:4200`. The app will automatically reload
+if you change any of the source files.
 
-## Build
+Unit tests can be run using the `ng test` command. End-to-end integration tests can be run using `ng e2e`. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+All assets (images, data, etc.) are located in the `assets` directory.
 
-## Running unit tests
+## Licensing
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+All original **code** is licensed under the Apache License 2.0. The text of the license is included in this repository, in the [LICENSE](./LICENSE) file.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+All images are taken from the No Man's Sky game assets, and are presumed copyright by Hello Games (publishers of No Man's Sky), used under "fair use" principles. These images are
+_not_ relicensed under the Apache License 2.0 included in this repository, and remain the property of their original owner(s). Original game content such as item names and 
+descriptions are similarly licensed. 
