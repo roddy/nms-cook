@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 968px;
+  margin: 0 auto;
+}
+
+.mat-column-icon {
+  height: 57px;
+  width: 75px;
+
+  img {
+    width: 50px;
+  }
+}
+
+.mat-column-type,
+.mat-column-value {
+  width: 100px;
+}
