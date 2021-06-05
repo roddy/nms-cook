@@ -1,1 +1,12 @@
-[]
+[
+  {"name": "Anomalous Jam", "ingredients": [{ "name": "Hexaberry", "quantity": 1}, { "name": "Processed Sugar", "quantity": 1}], "quantity": 1},
+  {"name": "Anomalous Tart", "ingredients": [{ "name": "Pie Case", "quantity": 1}, { "name": "Hexaberry", "quantity": 1}], "quantity": 1},
+  {"name": "Creature Pellets", "ingredients": [{ "name": "Carbon", "quantity": 60 }], "quantity": 1, "value": 20},
+  {"name": "Creature Pellets", "ingredients": [{ "name": "Carbon Nanotubes", "quantity": 1}, { "name": "Mordite", "quantity": 1}], "quantity": 1, "value": 20},
+  {"name": "Creature Pellets", "ingredients": [{ "name": "Leg Meat", "quantity": 1},{ "name": "Mordite", "quantity": 1}], "quantity": 1, "value": 20},
+  {"name": "Creature Pellets", "ingredients": [{ "name": "Faecium", "quantity": 1},{ "name": "Fungal Mould", "quantity": 1}], "quantity": 1, "value": 20},
+  {"name": "Fermented Fruit", "ingredients": [{ "name": "Hexaberry", "quantity": 1}, { "name": "Faecium", "quantity": 1}], "quantity": 1},
+  {"name": "Perpetual Ice Cream", "ingredients": [{ "name": "Viscous Custard", "quantity": 1}, { "name": "Frost Crystal", "quantity": 1}, { "name": "Hexaberry", "quantity": 1}], "quantity": 1},
+  {"name": "Perpetual Ice Cream", "ingredients": [{ "name": "Viscous Custard", "quantity": 1}, { "name": "Frozen Tubers", "quantity": 1}, { "name": "Hexaberry", "quantity": 1}], "quantity": 1},
+  {"name": "Steamed Vegetables", "ingredients": [{ "name": "Hexaberry", "quantity": 1}], "quantity": 1},
+]

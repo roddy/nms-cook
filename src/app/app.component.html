@@ -4,6 +4,7 @@
 <nav>
   <a *ngFor="let category of categories"
      class="item"
+     [id]="'nav-' + category"
      [routerLink]="[ category ]">
     <div class="item-card">
       <div class="item-card-img-wrapper">

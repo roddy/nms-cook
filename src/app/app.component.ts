@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  categories = [ "ingredients", "recipes", "tools" ];
-}
-
-interface Category {
-  name: string;
-  target: string[];
-  image?: string;
+  categories = [ 'ingredients', 'recipes', 'tools' ];
 }
