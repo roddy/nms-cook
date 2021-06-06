@@ -1,7 +1,7 @@
 import {DataSource} from "@angular/cdk/collections";
 import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator, PageEvent} from "@angular/material/paginator";
-import {Observable, Subject, Subscription} from "rxjs";
+import {BehaviorSubject, Observable, Subject, Subscription} from "rxjs";
 
 import {IngredientsService} from "../ingredients.service";
 import {Ingredient} from "../models";
@@ -16,12 +16,18 @@ export class IngredientListComponent implements OnInit, OnDestroy, AfterViewInit
   displayedColumns = ['icon', 'name', 'type', 'value'];
   dataSource: IngredientDataSource;
 
+  private icons = new BehaviorSubject<Map<string, string>>(null);
+  private subscriptions: Subscription[] = [];
+
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   constructor(private ingredientsSvc: IngredientsService) { }
 
   ngOnInit(): void {
     this.dataSource = new IngredientDataSource(this.ingredientsSvc);
+    const sub = this.ingredientsSvc.getIconMap$()
+      .subscribe(icons => this.icons.next(icons));
+    this.subscriptions.push(sub);
   }
 
   ngAfterViewInit(): void {
@@ -31,15 +37,26 @@ export class IngredientListComponent implements OnInit, OnDestroy, AfterViewInit
 
   ngOnDestroy(): void {
     this.dataSource.disconnect();
+    this.subscriptions
+      .filter(sub => !sub.closed)
+      .forEach(sub => sub.unsubscribe());
   }
 
   resolveIcon(ingredient: Ingredient): string {
-    let name = !!ingredient.icon ? ingredient.icon : ingredient.name;
-    name = name.toLowerCase()
-      .replace(' ', '')
-      .replace("'", '');
-    return `../assets/icons/${name}.icon.png`;
-}
+    const icons = this.icons.getValue();
+
+    let filename: string = null;
+    if (icons !== null) {
+      filename = icons[ingredient.name];
+    }
+
+    if (!filename) {
+      filename = ingredient.name.toLowerCase()
+        .replace(' ', '')
+        .replace("'", '');
+    }
+    return `../assets/icons/${filename}.icon.png`;
+  }
 }
 
 class IngredientDataSource extends DataSource<Ingredient> {
@@ -76,6 +93,8 @@ class IngredientDataSource extends DataSource<Ingredient> {
     this.svc.getIngredients$()
       .subscribe(all => {
         this.paging.length = all.length;
+        this.paging.pageIndex = page;
+        this.paging.pageSize = pageSize;
 
         const offset = page * pageSize;
         const data = all.slice(offset, offset+pageSize);

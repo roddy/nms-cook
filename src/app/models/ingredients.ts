@@ -13,6 +13,18 @@ export enum IngredientType {
 
   // Animal ingredients are harvested by killing planetary fauna.
   ANIMAL = "animal",
+
+  // A Substance is a harvested substance, agricultural or otherwise.
+  SUBSTANCE = "substance",
+
+  // An element is a something that's mined or refined.
+  ELEMENT = "element",
+
+  // A raw ingredient is a primary material for edible products that doesn't fit in the other categories.
+  RAW_INGREDIENT = "raw ingredient",
+
+  // A refined ingredient is a previously refined food product that can be used in further recipes.
+  REFINED_INGREDIENT = "refined",
 }
 
 /**
@@ -35,5 +47,4 @@ export interface Ingredient {
   value?: number;
 
   verified: boolean;
-  icon?: string;
 }

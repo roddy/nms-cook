@@ -1,1 +1,41 @@
-<p>Coming soon!</p>
+<table mat-table [dataSource]="dataSource">
+  <ng-container matColumnDef="icon">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let recipe">
+      <img [src]="resolveIcon(recipe)" alt="" role="presentation"/>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="ingredients">
+    <th mat-header-cell *matHeaderCellDef>Ingredients</th>
+    <td mat-cell *matCellDef="let recipe">
+      <ng-container *ngFor="let ingredient of recipe.ingredients; let last = last">
+        {{ingredient.ingredient.name}} ({{ingredient.quantity}})<span *ngIf="!last">;</span>
+      </ng-container>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Name</th>
+    <td mat-cell *matCellDef="let recipe">{{ recipe.name }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="value">
+    <th mat-header-cell *matHeaderCellDef>Value</th>
+    <td mat-cell *matCellDef="let recipe">{{ recipe.value ? recipe.value : '?' }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<mat-paginator [length]="100"
+               [pageSize]="5"
+               [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+
+<!--
+<pre>
+  {{ allNames }}
+  {{ all | json }}
+</pre>
+-->
