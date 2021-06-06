@@ -1,0 +1,13 @@
+<nav>
+  <a *ngFor="let category of categories"
+     class="item"
+     [id]="'nav-' + category"
+     [routerLink]="[ category ]">
+    <div class="item-card">
+      <div class="item-card-img-wrapper">
+        <img [src]="'../assets/' + category + '.panel.png'" alt="" role="presentation"/>
+      </div>
+      <div class="item-card-title">{{ category | titlecase }}</div>
+    </div>
+  </a>
+</nav>
