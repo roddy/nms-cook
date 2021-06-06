@@ -4,7 +4,7 @@ import {MatPaginator} from '@angular/material/paginator';
 import {BehaviorSubject, Observable, Subject, Subscription} from 'rxjs';
 
 import {Ingredient, Recipe, RecipeRecord} from '../models';
-import {RecipesService} from '../recipes.service';
+import {RecipesService} from '../services';
 
 @Component({
   selector: 'app-recipe-list',

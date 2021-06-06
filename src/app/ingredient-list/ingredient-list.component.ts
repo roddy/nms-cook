@@ -3,7 +3,7 @@ import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/c
 import {MatPaginator, PageEvent} from "@angular/material/paginator";
 import {BehaviorSubject, Observable, Subject, Subscription} from "rxjs";
 
-import {IngredientsService} from "../ingredients.service";
+import {IngredientsService} from "../services";
 import {Ingredient} from "../models";
 
 @Component({

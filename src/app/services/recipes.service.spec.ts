@@ -1,7 +1,7 @@
 import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
 import {TestBed} from '@angular/core/testing';
 
-import {Ingredient, IngredientType, RecipeRecord} from "./models";
+import {Ingredient, IngredientType, RecipeRecord} from "../models";
 import {RecipesService} from './recipes.service';
 
 describe('RecipesService', () => {

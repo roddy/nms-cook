@@ -3,7 +3,7 @@ import {Injectable} from '@angular/core';
 import {Observable} from "rxjs";
 import {map} from "rxjs/operators";
 
-import {GenericIconStorage, Ingredient} from "./models";
+import {GenericIconStorage, Ingredient} from "../models";
 
 /**
  * The Ingredients Service fetches all of the ingredients from the application assets and makes them available to other

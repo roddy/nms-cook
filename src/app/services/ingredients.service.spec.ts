@@ -1,8 +1,8 @@
 import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
 import {TestBed} from '@angular/core/testing';
 
+import {Ingredient, IngredientType} from "../models";
 import {IngredientsService} from './ingredients.service';
-import {Ingredient, IngredientType} from "./models";
 
 describe('IngredientsService', () => {
   let service: IngredientsService;

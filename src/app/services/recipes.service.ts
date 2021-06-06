@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import {Observable,zip} from "rxjs";
 import {map} from "rxjs/operators";
 
+import {GenericIconStorage, Ingredient, Recipe, RecipeRecord} from "../models";
 import {IngredientsService} from "./ingredients.service";
-import {GenericIconStorage, Ingredient, Recipe, RecipeRecord} from "./models";
 
 @Injectable({
   providedIn: 'root'
