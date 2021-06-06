@@ -26,7 +26,6 @@ describe('RecipesService', () => {
       verified: false,
       value: 666,
       quantity: 1,
-      icon: "pretty",
       ingredients: [{ name: "Bananas", quantity: 69 }]
     }];
     const ingredients: Ingredient[] = [
@@ -56,7 +55,6 @@ describe('RecipesService', () => {
       verified: false,
       value: 666,
       quantity: 1,
-      icon: "pretty",
       ingredients: [{ name: "Bananas", quantity: 69 }]
     };
     const ingredients: Ingredient[] = [
@@ -69,7 +67,6 @@ describe('RecipesService', () => {
     expect(result.verified).toEqual(record.verified);
     expect(result.value).toEqual(record.value);
     expect(result.yield).toEqual(record.quantity);
-    expect(result.icon).toEqual(record.icon);
     expect(result.ingredients.length).toEqual(1)
     expect(result.ingredients[0].ingredient).toEqual(ingredients[0]);
     expect(result.ingredients[0].quantity).toEqual(record.ingredients[0].quantity);
@@ -81,7 +78,6 @@ describe('RecipesService', () => {
       verified: false,
       value: 666,
       quantity: 1,
-      icon: "pretty",
       ingredients: [{ name: "Coconuts", quantity: 69 }]
     };
     const ingredients: Ingredient[] = [

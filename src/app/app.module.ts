@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {IngredientListComponent} from './ingredient-list/ingredient-list.component';
+import { LandingComponent } from './landing/landing.component';
 import {RecipeListComponent} from './recipe-list/recipe-list.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import {RecipeListComponent} from './recipe-list/recipe-list.component';
     AppComponent,
     IngredientListComponent,
     RecipeListComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,

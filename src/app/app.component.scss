@@ -8,7 +8,14 @@
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 980px;
+  margin: 0 auto 8px;
+
+  a {
+    color: #03a9f4;
+    text-decoration: none;
+  }
 }
 
 .title, .subtitle {
@@ -32,50 +39,4 @@ nav {
   color: rgba(255, 255, 255, 0.4);
   font-weight: 400;
   letter-spacing: .1em;
-}
-
-.item {
-  display: inline-block;
-  margin: 20px;
-  vertical-align: top;
-  width: 280px;
-
-  &,
-  &:active,
-  &:focus,
-  &:link,
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.item-card {
-  border: 1px solid hsla(0,0%,100%,.12); // TODO theming
-  background-color: #424242;
-
-  border-radius: 4px;
-  overflow: hidden;
-
-  &:hover {
-    background-color: rgba(0,0,0,.2);
-  }
-}
-
-.item-card-img-wrapper {
-  &,
-  img {
-    height: 156px;
-  }
-  border-bottom: 1px solid hsla(0,0%,100%,.12);
- background: linear-gradient(to right,rgba(3,169,244,0.30),rgba(3,169,244,0.10)) padding-box;
-  text-align: center;
-}
-
-.item-card-title {
-  width: 100%;
-  padding: 15px;
-  font-size: 20px;
-  font-weight: 500;
-  color: #FFF;
-  text-align: center;
 }
