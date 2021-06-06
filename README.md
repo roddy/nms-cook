@@ -2,8 +2,11 @@
 
 NMS Cook is a simple collection of tools related to cooking in the game No Man's Sky. The tools included in this application include:
 
-* Ingredients List (coming soon!)
-* Recipe List (coming soon!)
+* Ingredients List (partial)
+* Recipe List (partial)
+* Tools (Coming soon!)
+  * Recipe finder -- tell it what you have, and it'll tell you what you can make
+  * Shopping list -- tell it what you want to make, and it'll tell you what you need to get
 * ... and more in the future
 
 ## Technical details
