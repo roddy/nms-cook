@@ -1,9 +1,8 @@
-import {DataSource} from '@angular/cdk/collections';
 import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
-import {BehaviorSubject, Observable, Subject, Subscription} from 'rxjs';
+import {BehaviorSubject, Observable, Subscription} from 'rxjs';
 
-import {Ingredient, Recipe, RecipeRecord} from '../models';
+import {DEFAULT_PAGE_SIZE, JsonBackedDataSource, Recipe, RecipeRecord, resolveIcon} from '../models';
 import {RecipesService} from '../services';
 
 @Component({
@@ -12,6 +11,8 @@ import {RecipesService} from '../services';
   styleUrls: ['./recipe-list.component.scss']
 })
 export class RecipeListComponent implements OnInit, OnDestroy, AfterViewInit {
+
+  readonly PAGE_SIZE = DEFAULT_PAGE_SIZE;
 
   displayedColumns = ['icon', 'name', 'ingredients', 'value' ];
   dataSource: RecipeDataSource;
@@ -49,63 +50,18 @@ export class RecipeListComponent implements OnInit, OnDestroy, AfterViewInit {
       .forEach(sub => sub.unsubscribe());
   }
 
-  resolveIcon(ingredient: Ingredient): string {
+  resolveIcon(recipe: Recipe): string {
     const icons = this.icons.getValue();
-
-    let filename: string = null;
-    if (icons !== null) {
-      filename = icons[ingredient.name];
-    }
-
-    if (!filename) {
-      filename = ingredient.name.toLowerCase()
-        .replace(' ', '')
-        .replace("'", '');
-    }
-    return `../assets/icons/${filename}.icon.png`;
+    return `..${resolveIcon(icons, recipe)}`;
   }
 }
 
-class RecipeDataSource extends DataSource<Recipe> {
-
-  private data$: Subject<Recipe[]> = new Subject<Recipe[]>();
-  private paging: MatPaginator;
-  private subscription: Subscription[] = [];
-
+class RecipeDataSource extends JsonBackedDataSource<Recipe> {
   constructor(private svc: RecipesService) {
     super();
   }
 
-  set paginator(paginator: MatPaginator) {
-    this.paging = paginator;
-    const sub = paginator.page
-      .subscribe(pageEvent => {
-        this.refresh(pageEvent.pageIndex, pageEvent.pageSize);
-      });
-    this.subscription.push(sub);
-  }
-
-  connect(): Observable<Recipe[]> {
-    return this.data$.asObservable();
-  }
-
-  disconnect(): void {
-    this.data$.complete();
-    this.subscription
-      .filter(sub => !sub.closed)
-      .forEach(sub => sub.unsubscribe());
-  }
-
-  refresh(page: number = 0, pageSize: number = 5): void {
-    this.svc.getRecipes$()
-      .subscribe(all => {
-        this.paging.length = all.length;
-        this.paging.pageIndex = page;
-        this.paging.pageSize = pageSize;
-
-        const offset = page * pageSize;
-        const data = all.slice(offset, offset+pageSize);
-        this.data$.next(data);
-      });
+  protected getAllData(): Observable<Recipe[]> {
+    return this.svc.getRecipes$();
   }
 }
