@@ -1,0 +1,23 @@
+<h3>Recipe Finder</h3>
+
+<mat-card>
+  <mat-card-title>Ingredient Search</mat-card-title>
+  <mat-card-content>
+    Search goes here. When user selects something from the search, save it to the service/component.
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Selected Ingredients</mat-card-title>
+  <mat-card-content>
+    Table with selected ingredients goes here. 3 columns: Qty, Ingredient, Action (delete).
+  </mat-card-content>
+</mat-card>
+
+<p>Options go here. Maximize profit. Maximize yield. Ignore time costs --> cost of time: each step in a food processor takes a certain amount of time to complete; time is money; how much is your time worth?</p>
+
+<button mat-raised-button (click)="find()">Find Recipes</button>
+
+<pre>
+  {{ result | json }}
+</pre>

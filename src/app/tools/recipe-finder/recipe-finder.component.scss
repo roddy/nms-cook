@@ -1,0 +1,17 @@
+:host {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 16px; // backwards-compatibility
+  row-gap: 16px;
+}
+
+button {
+  background-color: #03a9f4;
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 2.1em;
+}

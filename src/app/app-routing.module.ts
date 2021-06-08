@@ -9,6 +9,10 @@ const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full'},
   { path: 'ingredients', component: IngredientListComponent },
   { path: 'recipes', component: RecipeListComponent },
+  {
+    path: 'tools',
+    loadChildren: () => import('./tools/tools.module').then(m => m.ToolsModule)
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ]
 

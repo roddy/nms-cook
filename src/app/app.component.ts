@@ -37,13 +37,18 @@ export class AppComponent implements OnInit, OnDestroy{
 
   get pageTitle(): string {
     const defaultTitle = "Tools for your No Man's Sky cooking needs.";
-    switch(this.currentUrl$.getValue()) {
+    const url = this.currentUrl$.getValue();
+    switch(url) {
       case '/ingredients':
         return 'Ingredients';
       case '/recipes':
         return 'Recipes';
       case '/tools':
         return 'Tools';
+    }
+
+    if (url.startsWith('/tools')) {
+      return 'Tools';
     }
     return defaultTitle;
   }
