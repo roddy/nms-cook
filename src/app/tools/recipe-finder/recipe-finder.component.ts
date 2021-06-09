@@ -1,55 +1,107 @@
-import {Component, OnInit} from '@angular/core';
+import {DataSource} from "@angular/cdk/collections";
+import {AfterViewInit, Component, OnDestroy, OnInit} from '@angular/core';
+import {BehaviorSubject, forkJoin, Observable, Subject, Subscription} from "rxjs";
+
+import {Ingredient, Recipe, resolveIcon} from "../../models";
 import {IngredientsService, RecipesService, SharedDataService} from "../../services";
-import {Ingredient, Recipe} from "../../models";
 import {RecipeFinder} from "./finder";
-import {forkJoin, zip} from "rxjs";
 
 @Component({
   selector: 'app-recipe-finder',
   templateUrl: './recipe-finder.component.html',
   styleUrls: ['./recipe-finder.component.scss']
 })
-export class RecipeFinderComponent implements OnInit {
+export class RecipeFinderComponent implements OnInit, OnDestroy, AfterViewInit {
 
-  private finder: RecipeFinder;
-
-  ingredients: IngredientWithQuantity[];
+  displayedColumns = [ 'name', 'qty', 'action'];
 
   result: Recipe[] = [];
 
+  selectedIngredients: SelectedIngredientDataSource;
+
+  private icons = new BehaviorSubject<Map<string, string>>(null);
+  private finder: RecipeFinder;
+  private subscriptions: Subscription[] = [];
 
   constructor(private sds: SharedDataService,
               private ingredientSvc: IngredientsService,
               private recipeSvc: RecipesService) { }
 
   ngOnInit(): void {
-    forkJoin([
+    this.selectedIngredients = new SelectedIngredientDataSource(this.sds);
+
+    this.sds.selectedIngredients$
+      .subscribe(selected => this.result = this.finder.findRecipes(selected));
+
+    const finderInit = forkJoin([
       this.ingredientSvc.getIngredients$(),
       this.recipeSvc.getRecipes$()
     ]).subscribe(
-      ([ingredients, recipes] ) => this.finder = new RecipeFinder(ingredients, recipes)
-    );
+      ([ingredients, recipes] ) => {
+        // TODO remove: debugging only
+        this.sds.reset();
+        const chosen: Ingredient[] = [];
+        chosen.push(ingredients.find(i => i.name === "Impulse Beans"));
+        chosen.push(ingredients.find(i => i.name === "Fireberry"));
+        chosen.push(ingredients.find(i => i.name === "Cactus Flesh"));
+        this.sds.addIngredients(...chosen);
+        // end todo
 
-    const existingIngredients: IngredientWithQuantity[] = [];
-    this.sds.getSelectedIngredients()
-      .forEach(i => existingIngredients.push({ ...i, quantity: 1, }));
-    this.ingredients = existingIngredients;
+        this.finder = new RecipeFinder(ingredients, recipes)
+      }
+    );
+    this.subscriptions.push(finderInit);
+
+    this.subscriptions.push(
+      this.ingredientSvc.getIconMap$()
+        .subscribe(icons => this.icons.next(icons))
+    );
   }
 
-  find(): void {
-    this.ingredientSvc.getIngredients$()
-      .subscribe(allIngredients => {
-        const ingredients: Ingredient[] = [];
-        ingredients.push(allIngredients.find(i => i.name === "Impulse Beans"));
-        ingredients.push(allIngredients.find(i => i.name === "Fireberry"));
-        ingredients.push(allIngredients.find(i => i.name === "Cactus Flesh"));
+  ngOnDestroy(): void {
+    this.selectedIngredients.disconnect();
+    this.subscriptions
+      .filter(sub => !sub.closed)
+      .forEach(sub => sub.unsubscribe());;
+  }
 
-        this.result = this.finder.findRecipes(ingredients);
-      });
+  ngAfterViewInit(): void {
 
+  }
+
+
+  resolveIngredientIcon(ingredient: Ingredient): string {
+    const icons = this.icons.getValue();
+    return `../..${resolveIcon(icons, ingredient)}`;
+  }
+
+  removeIngredient(ingredient: Ingredient): void {
+    this.sds.removeIngredient(ingredient);
   }
 }
 
-interface IngredientWithQuantity extends Ingredient {
-  quantity: number;
+// interface IngredientWithQuantity extends Ingredient {
+//   quantity: number;
+// }
+
+class SelectedIngredientDataSource extends DataSource<Ingredient> {
+
+  private data: Subject<Ingredient[]> = new Subject<Ingredient[]>();
+
+  constructor(private sds: SharedDataService) {
+    super();
+
+    this.sds.selectedIngredients$
+      .subscribe(data => this.data.next(data));
+
+  }
+
+  connect(): Observable<Ingredient[]> {
+    return this.data.asObservable();
+  }
+
+  disconnect(): void {
+    this.data.complete();
+  }
+
 }

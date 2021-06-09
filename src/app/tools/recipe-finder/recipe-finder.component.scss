@@ -7,11 +7,32 @@
   row-gap: 16px;
 }
 
-button {
+button:hover,
+button:active {
   background-color: #03a9f4;
 }
 
 h3 {
   font-size: 2em;
   line-height: 2.1em;
+}
+
+.mat-column-name {
+  display: flex;
+  align-items: center;
+
+  height: 57px;
+
+  img {
+    width: 50px;
+    margin-right: 16px;
+  }
+}
+
+.mat-table {
+  width: 100%;
+}
+
+.mat-column-action {
+  width: 100px;
 }

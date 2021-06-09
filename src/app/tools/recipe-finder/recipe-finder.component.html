@@ -1,5 +1,7 @@
 <h3>Recipe Finder</h3>
 
+<p>Options go here. Maximize profit. Maximize yield. Ignore time costs --> cost of time: each step in a food processor takes a certain amount of time to complete; time is money; how much is your time worth?</p>
+
 <mat-card>
   <mat-card-title>Ingredient Search</mat-card-title>
   <mat-card-content>
@@ -10,13 +12,36 @@
 <mat-card>
   <mat-card-title>Selected Ingredients</mat-card-title>
   <mat-card-content>
-    Table with selected ingredients goes here. 3 columns: Qty, Ingredient, Action (delete).
+<!--    Table with selected ingredients goes here. 3 columns: Qty, Ingredient, Action (delete).-->
+    <table mat-table [dataSource]="selectedIngredients">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let ingredient">
+          <img [src]="resolveIngredientIcon(ingredient)" alt="" role="presentation"/>
+          <span>{{ ingredient.name }}</span>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="qty">
+        <th mat-header-cell *matHeaderCellDef>Quantity</th>
+        <td mat-cell *matCellDef="let ingredient">1</td>
+      </ng-container>
+
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let ingredient">
+          <button mat-icon-button title="Remove" (click)="removeIngredient(ingredient)"><mat-icon>close</mat-icon></button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
   </mat-card-content>
 </mat-card>
 
-<p>Options go here. Maximize profit. Maximize yield. Ignore time costs --> cost of time: each step in a food processor takes a certain amount of time to complete; time is money; how much is your time worth?</p>
-
-<button mat-raised-button (click)="find()">Find Recipes</button>
 
 <pre>
   {{ result | json }}

@@ -8,6 +8,8 @@ import {MatInputModule} from "@angular/material/input";
 import {ToolsRoutingModule} from "./tools-routing.module";
 import { RecipeFinderComponent } from './recipe-finder/recipe-finder.component';
 import { ToolsComponent } from './tools.component';
+import {MatTableModule} from "@angular/material/table";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [RecipeFinderComponent, ToolsComponent],
@@ -18,7 +20,9 @@ import { ToolsComponent } from './tools.component';
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
+    MatIconModule,
     MatInputModule,
+    MatTableModule,
   ]
 })
 export class ToolsModule { }
