@@ -7,6 +7,21 @@
         "quantity": 1
       },
       {
+        "name": "Diplo Chunks",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Abyssal Stew",
+    "ingredients": [
+      {
+        "name": "Horrifying Mush",
+        "quantity": 1
+      },
+      {
         "name": "Feline Liver",
         "quantity": 1
       }
@@ -143,6 +158,21 @@
       },
       {
         "name": "Smoked Meat",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Abyssal Stew",
+    "ingredients": [
+      {
+        "name": "Horrifying Mush",
+        "quantity": 1
+      },
+      {
+        "name": "Steamed Vegetables",
         "quantity": 1
       }
     ],
@@ -217,6 +247,21 @@
         "quantity": 1
       },
       {
+        "name": "Diplo Chunks",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Abyssal Stew",
+    "ingredients": [
+      {
+        "name": "Hypnotic Eye",
+        "quantity": 1
+      },
+      {
         "name": "Feline Liver",
         "quantity": 1
       }
@@ -353,6 +398,21 @@
       },
       {
         "name": "Smoked Meat",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Abyssal Stew",
+    "ingredients": [
+      {
+        "name": "Hypnotic Eye",
+        "quantity": 1
+      },
+      {
+        "name": "Steamed Vegetables",
         "quantity": 1
       }
     ],
@@ -457,6 +517,21 @@
     "name": "Anomalous Doughnut",
     "ingredients": [
       {
+        "name": "Lumpen Doughnut",
+        "quantity": 1
+      },
+      {
+        "name": "Anomalous Jam",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Anomalous Doughnut",
+    "ingredients": [
+      {
         "name": "Lumpen Doughnut ",
         "quantity": 1
       },
@@ -491,7 +566,60 @@
         "quantity": 1
       },
       {
+        "name": "Anomalous Jam",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Anomalous Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
         "name": "Hexaberry",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Appalling Jam Sponge",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Furball Jelly",
+        "quantity": 1
+      },
+      {
+        "name": "Cream",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Appalling Jam Sponge",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Grahj'am",
+        "quantity": 1
+      },
+      {
+        "name": "Cream",
         "quantity": 1
       }
     ],
@@ -507,6 +635,25 @@
       },
       {
         "name": "Crab 'Apple'",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "'Apple' Cake of Lost Souls",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Wriggling Jam",
+        "quantity": 1
+      },
+      {
+        "name": "Cream",
         "quantity": 1
       }
     ],
@@ -662,6 +809,36 @@
     "verified": false
   },
   {
+    "name": "Baked Cheese Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "ProtoCheese",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Baked Cheese Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Tangy Cheese",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Baked Eggs",
     "ingredients": [
       {
@@ -781,6 +958,17 @@
     "quantity": 1,
     "verified": false,
     "value": 32000
+  },
+  {
+    "name": "Bread",
+    "ingredients": [
+      {
+        "name": "Dough",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
   },
   {
     "name": "Briney Delight",
@@ -976,6 +1164,44 @@
     "verified": false
   },
   {
+    "name": "Cake of Burning Dread",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Ever-burning Jam",
+        "quantity": 1
+      },
+      {
+        "name": "Cream",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cake of Glass",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Anomalous Jam",
+        "quantity": 1
+      },
+      {
+        "name": "Cream",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Cake of Sin",
     "ingredients": [
       {
@@ -1157,6 +1383,21 @@
     "verified": false
   },
   {
+    "name": "Caramel Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Crunchy Caramel",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Caramel-Encrusted Cake",
     "ingredients": [
       {
@@ -1221,6 +1462,196 @@
       },
       {
         "name": "Partially-Liquid Cheese",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "ProtoCheese",
+        "quantity": 1
+      },
+      {
+        "name": "Aloe Flesh",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "ProtoCheese",
+        "quantity": 1
+      },
+      {
+        "name": "Jade Peas",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "ProtoCheese",
+        "quantity": 1
+      },
+      {
+        "name": "Pulpy Roots",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "ProtoCheese",
+        "quantity": 1
+      },
+      {
+        "name": "Sievert Beans",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "ProtoCheese",
+        "quantity": 1
+      },
+      {
+        "name": "Solartillo",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Tangy Cheese",
+        "quantity": 1
+      },
+      {
+        "name": "Aloe Flesh",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Tangy Cheese",
+        "quantity": 1
+      },
+      {
+        "name": "Jade Peas",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Tangy Cheese",
+        "quantity": 1
+      },
+      {
+        "name": "Pulpy Roots",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Tangy Cheese",
+        "quantity": 1
+      },
+      {
+        "name": "Sievert Beans",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cheesy Vegetable Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Tangy Cheese",
+        "quantity": 1
+      },
+      {
+        "name": "Solartillo",
         "quantity": 1
       }
     ],
@@ -1597,36 +2028,6 @@
     "verified": false
   },
   {
-    "name": "Chewy 'Dumpling' Stew",
-    "ingredients": [
-      {
-        "name": "Lumpy Brainstem",
-        "quantity": 1
-      },
-      {
-        "name": "Processed Meat",
-        "quantity": 1
-      }
-    ],
-    "quantity": 1,
-    "verified": false
-  },
-  {
-    "name": "Chewy 'Dumpling' Stew",
-    "ingredients": [
-      {
-        "name": "Lumpy Brainstem",
-        "quantity": 1
-      },
-      {
-        "name": "Smoked Meat",
-        "quantity": 1
-      }
-    ],
-    "quantity": 1,
-    "verified": false
-  },
-  {
     "name": "Chocolate Cake",
     "ingredients": [
       {
@@ -1722,6 +2123,40 @@
       },
       {
         "name": "Bittersweet Cocoa ",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Choking Monstrosity Cake",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Cactus Jelly",
+        "quantity": 1
+      },
+      {
+        "name": "Cream",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Choking Monstrosity Cake",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Cactus Nectar",
         "quantity": 1
       }
     ],
@@ -1860,6 +2295,51 @@
     "ingredients": [
       {
         "name": "Proto-Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Cream",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Cream of Vegetable Soup",
+    "ingredients": [
+      {
+        "name": "Fibrous Stew",
+        "quantity": 1
+      },
+      {
+        "name": "Creamy Sauce",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Creamed Organ Soup",
+    "ingredients": [
+      {
+        "name": "Stewed Organs",
+        "quantity": 1
+      },
+      {
+        "name": "Creamy Sauce",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Creamy Treat",
+    "ingredients": [
+      {
+        "name": "Pie Case",
         "quantity": 1
       },
       {
@@ -2223,6 +2703,21 @@
         "quantity": 1
       },
       {
+        "name": "Salty Custard",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Custard Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
         "name": "Viscous Custard",
         "quantity": 1
       }
@@ -2284,6 +2779,66 @@
       },
       {
         "name": "Processed Sugar",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Delicious Vegetable Stew",
+    "ingredients": [
+      {
+        "name": "Fibrous Stew",
+        "quantity": 1
+      },
+      {
+        "name": "Flavoursome Sauce",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Devilled Organs",
+    "ingredients": [
+      {
+        "name": "Stewed Organs",
+        "quantity": 1
+      },
+      {
+        "name": "Scorching Sauce",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Doomed Cream Cake",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Cream",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Dough",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Wild Yeast",
         "quantity": 1
       }
     ],
@@ -2407,6 +2962,21 @@
     "name": "Ever-burning Jam",
     "ingredients": [
       {
+        "name": "Fireberry",
+        "quantity": 1
+      },
+      {
+        "name": "Processed Sugar",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Ever-burning Jam",
+    "ingredients": [
+      {
         "name": "Fireberry ",
         "quantity": 1
       },
@@ -2484,6 +3054,21 @@
       },
       {
         "name": "Cream",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fermented Fruit",
+    "ingredients": [
+      {
+        "name": "Fireberry",
+        "quantity": 1
+      },
+      {
+        "name": "Faecium",
         "quantity": 1
       }
     ],
@@ -2914,6 +3499,96 @@
     "name": "Fibrous Stew",
     "ingredients": [
       {
+        "name": "Steamed Vegetables",
+        "quantity": 1
+      },
+      {
+        "name": "Jade Peas",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fibrous Stew",
+    "ingredients": [
+      {
+        "name": "Steamed Vegetables",
+        "quantity": 1
+      },
+      {
+        "name": "Non-Toxic Mushroom",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fibrous Stew",
+    "ingredients": [
+      {
+        "name": "Steamed Vegetables",
+        "quantity": 1
+      },
+      {
+        "name": "Pulpy Roots",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fibrous Stew",
+    "ingredients": [
+      {
+        "name": "Steamed Vegetables",
+        "quantity": 1
+      },
+      {
+        "name": "Sievert Beans",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fibrous Stew",
+    "ingredients": [
+      {
+        "name": "Steamed Vegetables",
+        "quantity": 1
+      },
+      {
+        "name": "Solartillo",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fibrous Stew",
+    "ingredients": [
+      {
+        "name": "Steamed Vegetables",
+        "quantity": 1
+      },
+      {
+        "name": "Sweetroot",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fibrous Stew",
+    "ingredients": [
+      {
         "name": "Steamed Vegetables ",
         "quantity": 1
       },
@@ -2986,6 +3661,32 @@
     "verified": false
   },
   {
+    "name": "Fiery Vegetable Stew",
+    "ingredients": [
+      {
+        "name": "Fibrous Stew",
+        "quantity": 1
+      },
+      {
+        "name": "Scorching Sauce",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fire Water",
+    "ingredients": [
+      {
+        "name": "Fireberry",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Fire Water",
     "ingredients": [
       {
@@ -3020,6 +3721,51 @@
       },
       {
         "name": "Flavoursome Sauce",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Flavoursome Organs",
+    "ingredients": [
+      {
+        "name": "Stewed Organs",
+        "quantity": 1
+      },
+      {
+        "name": "Flavoursome Sauce",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Flavoursome Sauce",
+    "ingredients": [
+      {
+        "name": "Root Juice",
+        "quantity": 1
+      },
+      {
+        "name": "Steamed Vegetables",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Flavoursome Sauce",
+    "ingredients": [
+      {
+        "name": "Steamed Vegetables",
+        "quantity": 1
+      },
+      {
+        "name": "Steamed Vegetables",
         "quantity": 1
       }
     ],
@@ -3440,6 +4186,36 @@
     "name": "Fruity Pudding",
     "ingredients": [
       {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Grahberry",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fruity Pudding",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Pilgrimberry",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Fruity Pudding",
+    "ingredients": [
+      {
         "name": "Pie Case ",
         "quantity": 1
       },
@@ -3710,6 +4486,21 @@
     "verified": false
   },
   {
+    "name": "Fungal Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Non-Toxic Mushroom",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Furball Jelly",
     "ingredients": [
       {
@@ -3968,6 +4759,66 @@
     "name": "Glowing Pie",
     "ingredients": [
       {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Ever-burning Jam",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Glowing Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Fireberry",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Glowing Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Sievert Beans",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Glowing Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Solartillo",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Glowing Pie",
+    "ingredients": [
+      {
         "name": "Pie Case ",
         "quantity": 1
       },
@@ -4176,6 +5027,21 @@
         "quantity": 1
       },
       {
+        "name": "Gooey Butter",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Gooey Screamer",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
         "name": "Sticky 'Honey'",
         "quantity": 1
       }
@@ -4274,6 +5140,21 @@
     "verified": false
   },
   {
+    "name": "Haunted Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Fiendish Roe",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Herb-Encrusted Flesh",
     "ingredients": [
       {
@@ -4282,6 +5163,36 @@
       },
       {
         "name": "Flavoursome Sauce",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "High-Fibre Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Jade Peas",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "High-Fibre Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Steamed Vegetables",
         "quantity": 1
       }
     ],
@@ -4441,6 +5352,21 @@
       },
       {
         "name": "Sticky 'Honey'",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Honey Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Synthetic Honey",
         "quantity": 1
       }
     ],
@@ -4610,6 +5536,51 @@
       },
       {
         "name": "Monstrous Custard",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Horrifying, Gooey Delight",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Monstrous Custard",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Horrifying, Gooey Delight",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Salty Custard",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Horrifying, Gooey Delight",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Stellar Custard",
         "quantity": 1
       }
     ],
@@ -4853,6 +5824,36 @@
     "name": "Jam Doughnut",
     "ingredients": [
       {
+        "name": "Lumpen Doughnut",
+        "quantity": 1
+      },
+      {
+        "name": "Ever-burning Jam",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Jam Doughnut",
+    "ingredients": [
+      {
+        "name": "Lumpen Doughnut",
+        "quantity": 1
+      },
+      {
+        "name": "Furball Jelly",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Jam Doughnut",
+    "ingredients": [
+      {
         "name": "Lumpen Doughnut ",
         "quantity": 1
       },
@@ -4986,6 +5987,51 @@
     "verified": false
   },
   {
+    "name": "Jam Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Cactus Jelly",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Jam Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Grahj'am",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Jellied Fur Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Furball Jelly",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Jellied Fur Tart",
     "ingredients": [
       {
@@ -5034,6 +6080,25 @@
     "name": "Lumpen Doughnut",
     "ingredients": [
       {
+        "name": "Clarified Oil",
+        "quantity": 1
+      },
+      {
+        "name": "Dough",
+        "quantity": 1
+      },
+      {
+        "name": "Processed Sugar",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Lumpen Doughnut",
+    "ingredients": [
+      {
         "name": "Clarified Oil ",
         "quantity": 1
       },
@@ -5058,6 +6123,21 @@
       },
       {
         "name": "Monstrous Custard",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Monstrous Honey Cake",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Synthetic Honey",
         "quantity": 1
       }
     ],
@@ -5098,11 +6178,41 @@
     "name": "Mushed Root Pie",
     "ingredients": [
       {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Sweetroot",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Mushed Root Pie",
+    "ingredients": [
+      {
         "name": "Pie Case ",
         "quantity": 1
       },
       {
         "name": "Sweetroot ",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Mystery Meat Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Diplo Chunks",
         "quantity": 1
       }
     ],
@@ -5193,6 +6303,21 @@
       },
       {
         "name": "Strider Sausage",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Mystery Meat Stew",
+    "ingredients": [
+      {
+        "name": "Diplo Chunks",
+        "quantity": 1
+      },
+      {
+        "name": "Diplo Chunks",
         "quantity": 1
       }
     ],
@@ -5890,6 +7015,36 @@
     "verified": false
   },
   {
+    "name": "Pastry",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Churned Butter",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Pastry",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Proto-Butter",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Perpetual Cake",
     "ingredients": [
       {
@@ -6061,6 +7216,17 @@
     "verified": false
   },
   {
+    "name": "Pie Case",
+    "ingredients": [
+      {
+        "name": "Pastry",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Prickly Curiosity",
     "ingredients": [
       {
@@ -6110,6 +7276,17 @@
     "ingredients": [
       {
         "name": "Crystal Flesh",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Processed Meat",
+    "ingredients": [
+      {
+        "name": "Diplo Chunks",
         "quantity": 1
       }
     ],
@@ -6415,6 +7592,25 @@
     "verified": false
   },
   {
+    "name": "Proto-Beignet",
+    "ingredients": [
+      {
+        "name": "Proto-Oil",
+        "quantity": 1
+      },
+      {
+        "name": "Dough",
+        "quantity": 1
+      },
+      {
+        "name": "Processed Sugar",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Proto-Cream",
     "ingredients": [
       {
@@ -6557,6 +7753,17 @@
     "verified": false
   },
   {
+    "name": "Refined Flour",
+    "ingredients": [
+      {
+        "name": "Kelp Rice",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Refreshing Drink",
     "ingredients": [
       {
@@ -6602,6 +7809,25 @@
       },
       {
         "name": "Salty Custard",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Salty Juice",
+    "ingredients": [
+      {
+        "name": "Cactus Flesh",
+        "quantity": 1
+      },
+      {
+        "name": "Salt",
+        "quantity": 1
+      },
+      {
+        "name": "Fire Water",
         "quantity": 1
       }
     ],
@@ -6672,6 +7898,81 @@
     "name": "Scorching Sauce",
     "ingredients": [
       {
+        "name": "Fire Water",
+        "quantity": 1
+      },
+      {
+        "name": "Fire Water",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Scorching Sauce",
+    "ingredients": [
+      {
+        "name": "Fire Water",
+        "quantity": 1
+      },
+      {
+        "name": "Fireberry",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Scorching Sauce",
+    "ingredients": [
+      {
+        "name": "Fire Water",
+        "quantity": 1
+      },
+      {
+        "name": "Grahberry",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Scorching Sauce",
+    "ingredients": [
+      {
+        "name": "Fire Water",
+        "quantity": 1
+      },
+      {
+        "name": "Sievert Beans",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Scorching Sauce",
+    "ingredients": [
+      {
+        "name": "Fire Water",
+        "quantity": 1
+      },
+      {
+        "name": "Solartillo",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Scorching Sauce",
+    "ingredients": [
+      {
         "name": "Fire Water ",
         "quantity": 1
       },
@@ -6692,6 +7993,21 @@
       },
       {
         "name": "Grahberry ",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Scorching Sauce",
+    "ingredients": [
+      {
+        "name": "Root Juice",
+        "quantity": 1
+      },
+      {
+        "name": "Fireberry",
         "quantity": 1
       }
     ],
@@ -6827,6 +8143,21 @@
       },
       {
         "name": "Carbon",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Smoked Meat",
+    "ingredients": [
+      {
+        "name": "Diplo Chunks",
+        "quantity": 1
+      },
+      {
+        "name": "Condensed Carbon",
         "quantity": 1
       }
     ],
@@ -7490,6 +8821,36 @@
         "quantity": 1
       },
       {
+        "name": "Clarified Oil",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Solidified Grease Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Proto-Oil",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Solidified Grease Pie",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
         "name": "Regis Grease",
         "quantity": 1
       }
@@ -7698,6 +9059,36 @@
     "name": "Spikey Tart",
     "ingredients": [
       {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Aloe Flesh",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Spikey Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Cactus Nectar",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Spikey Tart",
+    "ingredients": [
+      {
         "name": "Pie Case ",
         "quantity": 1
       },
@@ -7770,6 +9161,21 @@
     "ingredients": [
       {
         "name": "Jade Peas ",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Stellar Custard Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Stellar Custard",
         "quantity": 1
       }
     ],
@@ -7897,10 +9303,55 @@
     "verified": false
   },
   {
+    "name": "Sweetened Compost",
+    "ingredients": [
+      {
+        "name": "Fermented Fruit",
+        "quantity": 1
+      },
+      {
+        "name": "Faecium",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Synthetic Honey",
     "ingredients": [
       {
         "name": "Sticky 'Honey'",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Tangy Organ Surprise",
+    "ingredients": [
+      {
+        "name": "Stewed Organs",
+        "quantity": 1
+      },
+      {
+        "name": "Partially-Liquid Cheese",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Tangy Vegetable Stew",
+    "ingredients": [
+      {
+        "name": "Fibrous Stew",
+        "quantity": 1
+      },
+      {
+        "name": "Partially-Liquid Cheese",
         "quantity": 1
       }
     ],
@@ -7916,6 +9367,21 @@
       },
       {
         "name": "Dirty Meat",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "The Spawning Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Monstrous Custard",
         "quantity": 1
       }
     ],
@@ -8431,6 +9897,135 @@
     "verified": false
   },
   {
+    "name": "Wailing Batter",
+    "ingredients": [
+      {
+        "name": "Gooey Butter",
+        "quantity": 1
+      },
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Larval Core",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Wailing Batter",
+    "ingredients": [
+      {
+        "name": "Gooey ProtoButter",
+        "quantity": 1
+      },
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Larval Core",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Wailing Batter",
+    "ingredients": [
+      {
+        "name": "Honey Butter",
+        "quantity": 1
+      },
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Larval Core",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Wailing Batter",
+    "ingredients": [
+      {
+        "name": "Honied Proto-Butter",
+        "quantity": 1
+      },
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Larval Core",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Wailing Batter",
+    "ingredients": [
+      {
+        "name": "Sweetened Butter",
+        "quantity": 1
+      },
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Larval Core",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Wailing Batter",
+    "ingredients": [
+      {
+        "name": "Sweetened Proto-Butter",
+        "quantity": 1
+      },
+      {
+        "name": "Refined Flour",
+        "quantity": 1
+      },
+      {
+        "name": "Larval Core",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Wailing Caramel Cake",
+    "ingredients": [
+      {
+        "name": "Wailing Batter",
+        "quantity": 1
+      },
+      {
+        "name": "Crunchy Caramel",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
     "name": "Well-Stirred Stew",
     "ingredients": [
       {
@@ -8694,6 +10289,21 @@
       },
       {
         "name": "Crab 'Apple'",
+        "quantity": 1
+      }
+    ],
+    "quantity": 1,
+    "verified": false
+  },
+  {
+    "name": "Wriggling Tart",
+    "ingredients": [
+      {
+        "name": "Pie Case",
+        "quantity": 1
+      },
+      {
+        "name": "Wriggling Jam",
         "quantity": 1
       }
     ],
