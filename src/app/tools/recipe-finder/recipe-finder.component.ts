@@ -3,8 +3,9 @@ import {AfterViewInit, Component, OnDestroy, OnInit} from '@angular/core';
 import {BehaviorSubject, forkJoin, Observable, Subject, Subscription} from "rxjs";
 
 import {Ingredient, Recipe, resolveIcon} from "../../models";
-import {IngredientsService, RecipesService, SharedDataService} from "../../services";
+import {IngredientWithQuantity, IngredientsService, RecipesService, SharedDataService} from "../../services";
 import {RecipeFinder} from "./finder";
+import {switchMap} from "rxjs/operators";
 
 @Component({
   selector: 'app-recipe-finder',
@@ -30,26 +31,24 @@ export class RecipeFinderComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void {
     this.selectedIngredients = new SelectedIngredientDataSource(this.sds);
 
-    this.sds.selectedIngredients$
-      .subscribe(selected => this.result = this.finder.findRecipes(selected));
-
     const finderInit = forkJoin([
       this.ingredientSvc.getIngredients$(),
       this.recipeSvc.getRecipes$()
-    ]).subscribe(
-      ([ingredients, recipes] ) => {
-        // TODO remove: debugging only
-        this.sds.reset();
-        const chosen: Ingredient[] = [];
-        chosen.push(ingredients.find(i => i.name === "Impulse Beans"));
-        chosen.push(ingredients.find(i => i.name === "Fireberry"));
-        chosen.push(ingredients.find(i => i.name === "Cactus Flesh"));
-        this.sds.addIngredients(...chosen);
-        // end todo
+    ])
+      .pipe(
+        switchMap(([ingredients, recipes]) => {
+          // TODO remove: debugging only
+          this.sds.reset();
+          this.sds.addIngredient(ingredients.find(i => i.name === "Impulse Beans"));
+          this.sds.addIngredient(ingredients.find(i => i.name === "Fireberry"));
+          this.sds.addIngredient(ingredients.find(i => i.name === "Cactus Flesh"));
+          // end todo
 
-        this.finder = new RecipeFinder(ingredients, recipes)
-      }
-    );
+          this.finder = new RecipeFinder(ingredients, recipes)
+          return this.sds.selectedIngredients$
+        })
+      ).subscribe((selected: IngredientWithQuantity[]) => this.result = this.finder.findRecipes(selected));
+
     this.subscriptions.push(finderInit);
 
     this.subscriptions.push(
@@ -80,13 +79,9 @@ export class RecipeFinderComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 }
 
-// interface IngredientWithQuantity extends Ingredient {
-//   quantity: number;
-// }
+class SelectedIngredientDataSource extends DataSource<IngredientWithQuantity> {
 
-class SelectedIngredientDataSource extends DataSource<Ingredient> {
-
-  private data: Subject<Ingredient[]> = new Subject<Ingredient[]>();
+  private data: Subject<IngredientWithQuantity[]> = new Subject<IngredientWithQuantity[]>();
 
   constructor(private sds: SharedDataService) {
     super();
@@ -96,7 +91,7 @@ class SelectedIngredientDataSource extends DataSource<Ingredient> {
 
   }
 
-  connect(): Observable<Ingredient[]> {
+  connect(): Observable<IngredientWithQuantity[]> {
     return this.data.asObservable();
   }
 

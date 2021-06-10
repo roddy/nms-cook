@@ -12,7 +12,6 @@
 <mat-card>
   <mat-card-title>Selected Ingredients</mat-card-title>
   <mat-card-content>
-<!--    Table with selected ingredients goes here. 3 columns: Qty, Ingredient, Action (delete).-->
     <table mat-table [dataSource]="selectedIngredients">
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef>Name</th>
@@ -24,7 +23,11 @@
 
       <ng-container matColumnDef="qty">
         <th mat-header-cell *matHeaderCellDef>Quantity</th>
-        <td mat-cell *matCellDef="let ingredient">1</td>
+        <td mat-cell *matCellDef="let ingredient">
+          <mat-form-field>
+            <input matInput type="number" min="0" max="10000" [(ngModel)]="ingredient.quantity">
+          </mat-form-field>
+        </td>
       </ng-container>
 
       <ng-container matColumnDef="action">

@@ -5,6 +5,14 @@
   flex-direction: column;
   grid-row-gap: 16px; // backwards-compatibility
   row-gap: 16px;
+
+  .mat-input-element {
+    caret-color: #03a9f4;
+  }
+
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: #03a9f4;
+  }
 }
 
 button:hover,
@@ -33,6 +41,19 @@ h3 {
   width: 100%;
 }
 
+.mat-column-qty ::ng-deep .mat-form-field-infix {
+  width: 75px;
+}
+
+.mat-column-qty,
 .mat-column-action {
   width: 100px;
+}
+
+.mat-column-action {
+  text-align: center;
+
+  button {
+    margin: 0 auto;
+  }
 }

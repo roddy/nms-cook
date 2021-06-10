@@ -59,6 +59,7 @@
 
   {"name": "Cactus Nectar", "type": "raw ingredient", "value": 300, "verified": false},
 
+  {"name": "Anomalous Jam", "type": "refine", "value": 5400, "verified": false },
   {"name": "Bone Butter", "type": "refined", "value": 32000, "verified": false },
   {"name": "Bone Milk", "type": "refined", "value":  32000, "verified":  false },
   {"name": "Bone Cream", "type": "refined", "value": 32000, "verified":  false },
@@ -69,6 +70,8 @@
   {"name": "Ever-burning Jam", "type": "refined", "value": 3400, "verified": false},
   {"name": "Extra-Fluffy Batter", "type": "refined", "value": 14000, "verified": false },
   {"name": "Fermented Fruit", "type": "refined", "value": 800, "verified": false},
+  {"name": "Fibrous Stew", "type": "refined", "value": 6400, "verified": false},
+  {"name": "Flavoursome Sauce", "type": "refined", "value": 7200, "verified": false},
   {"name": "Furball Jelly", "type": "refined", "value": 9000, "verified": false },
   {"name": "Fire Water", "type": "refined", "value": 1800, "verified": false},
   {"name": "Gelatinous Goop", "type": "refined", "value": 6400, "verified": false },
@@ -83,6 +86,7 @@
   {"name": "Scorching Sauce", "type": "refined", "value": 7200, "verified": false },
   {"name": "Scrambled Marrow", "type": "refined", "value": 24000, "verified": false },
   {"name": "Smoked Meat", "type": "refined", "value": 2200, "verified": false},
+  {"name": "Steamed Vegetables", "type": "refined", "value": 1800, "verified": false},
   {"name": "Stewed Organs", "type": "refined", "value": 6400, "verified": false},
   {"name": "Thick, Sweet Batter", "type": "refined", "value": 48000, "verified": false },
   {"name": "Very Thick Custard", "type": "refined", "value": 32000, "verified": false },

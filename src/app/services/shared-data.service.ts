@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject} from "rxjs";
+import {BehaviorSubject, Observable} from "rxjs";
 
 import {Ingredient} from "../models";
 
@@ -8,20 +8,14 @@ import {Ingredient} from "../models";
 })
 export class SharedDataService {
 
-  private _selectedIngredients$ = new BehaviorSubject<Ingredient[]>([]);
-  selectedIngredients$ = this._selectedIngredients$.asObservable();
+  private _selectedIngredients$ = new BehaviorSubject<IngredientWithQuantity[]>([]);
+  selectedIngredients$: Observable<IngredientWithQuantity[]> = this._selectedIngredients$.asObservable();
 
   constructor() { }
 
-  addIngredient(ingredient: Ingredient): void {
+  addIngredient(ingredient: Ingredient, quantity: number = 1): void {
     const current = this._selectedIngredients$.getValue();
-    current.push(ingredient);
-    this._selectedIngredients$.next(current);
-  }
-
-  addIngredients(... ingredients: Ingredient[]): void {
-    const current = this._selectedIngredients$.getValue();
-    current.push(...ingredients);
+    current.push({...ingredient, quantity});
     this._selectedIngredients$.next(current);
   }
 
@@ -37,4 +31,8 @@ export class SharedDataService {
   reset() {
     this._selectedIngredients$.next([]);
   }
+}
+
+export interface IngredientWithQuantity extends Ingredient {
+  quantity: number;
 }

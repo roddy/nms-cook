@@ -10,11 +10,13 @@ import { RecipeFinderComponent } from './recipe-finder/recipe-finder.component';
 import { ToolsComponent } from './tools.component';
 import {MatTableModule} from "@angular/material/table";
 import {MatIconModule} from "@angular/material/icon";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [RecipeFinderComponent, ToolsComponent],
   imports: [
     CommonModule,
+    FormsModule,
     ToolsRoutingModule,
 
     MatButtonModule,
